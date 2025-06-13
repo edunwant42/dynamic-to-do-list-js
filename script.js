@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Create <li> element and text node
+        // Create list element and text node
         const li = document.createElement('li');
         const taskTextNode = document.createTextNode(taskText);
         li.appendChild(taskTextNode);
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create remove button
         const removeBtn = document.createElement('button');
         removeBtn.textContent = 'Remove';
-        removeBtn.className = 'remove-btn';
+        removeBtn.classList.add('remove-btn');
 
         // Remove task on click
         removeBtn.onclick = () => {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const removeBtn = document.createElement('button');
             removeBtn.textContent = 'Remove';
-            removeBtn.className = 'remove-btn';
+            removeBtn.classList.add('remove-btn');
 
             removeBtn.onclick = () => {
                 taskList.removeChild(li);
